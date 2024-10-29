@@ -1,6 +1,6 @@
 # {{ project-name }}
 
-An opinionated starter project for axum with sqlx, postgres, tinyid, anyhow, tracing output, and EnvConfig for loading configuration.
+An opinionated starter project for axum with sqlx, postgres, nanoid, anyhow, tracing output, and EnvConfig for loading configuration.
 
 The structure of the source:
 

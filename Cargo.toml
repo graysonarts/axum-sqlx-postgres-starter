@@ -15,7 +15,7 @@ sqlx = { version = "0.8.2", features = [
 	"sqlx-macros",
 	"chrono",
 ] }
-tinyid = { version = "1.0.3", features = ["serde"] }
+nanoid = "0.4.0"
 tokio = { version = "1.41.0", features = ["full"] }
 tower-http = { version = "0.6.1", features = ["fs", "cors", "trace"] }
 tracing = { version = "0.1.40", features = [
