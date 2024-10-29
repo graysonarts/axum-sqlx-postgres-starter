@@ -1,0 +1,25 @@
+[package]
+name = "{{ crate_name }}"
+version = "0.1.0"
+edition = "2021"
+authors = ["{{ authors }}"]
+
+[dependencies]
+anyhow = "1.0.91"
+axum = { version = "0.7.7", features = ["macros", "http2"] }
+dotenvy = "0.15.7"
+envconfig = "0.11.0"
+sqlx = { version = "0.8.2", features = [
+	"runtime-tokio-rustls",
+	"postgres",
+	"sqlx-macros",
+	"chrono",
+] }
+tinyid = { version = "1.0.3", features = ["serde"] }
+tokio = { version = "1.41.0", features = ["full"] }
+tower-http = { version = "0.6.1", features = ["fs", "cors", "trace"] }
+tracing = { version = "0.1.40", features = [
+	"max_level_trace",
+	"release_max_level_info",
+] }
+tracing-subscriber = { version = "0.3.18", features = ["env-filter"] }
